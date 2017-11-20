@@ -16,7 +16,7 @@ angular.module('angularInitializer.view1', ['ngRoute'])
 
     $http({
       method : 'GET',
-      url : 'http://localhost:3000/surMano',
+      url : 'http://localhost:3000/proyectos/angularJs/v1',
       responseType: 'arraybuffer',
       cache: false,
       headers: {
