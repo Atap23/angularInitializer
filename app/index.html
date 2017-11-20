@@ -6,30 +6,57 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
+  <title>Angular Initializer</title>
+  <base href="/" />
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="app.css">
+
+  <!-- inject:css -->
+
+  <link rel="stylesheet" href="/app/app.css">
+
+  <link rel="stylesheet" href="/app/bower_components/angular/angular-csp.css">
+
+  <!-- endinject -->
 </head>
 <body>
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <div ng-view></div>
-
-  <div>Angular seed app: v<span app-version></span></div>
+  <pre> Angular Initializer v1.2.3.4</pre>
+  <a ui-sref="intro">POOOOLLAS!</a>
+  <div ui-view="root"></div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
-  <script src="components/version/version.js"></script>
-  <script src="components/version/version-directive.js"></script>
-  <script src="components/version/interpolate-filter.js"></script>
+
+  <!-- inject:js -->
+  <script src="/app/bower_components/angular/angular.js"></script>
+  <script src="/app/bower_components/angular/angular.min.js"></script>
+  <script src="/app/app.js"></script>
+  <script src="/app/app.module.js"></script>
+  <script src="/app/intro/intro.controller.js"></script>
+  <script src="/app/intro/intro.module.js"></script>
+  <script src="/app/intro/intro.route.js"></script>
+  <script src="/app/bower_components/angular/index.js"></script>
+  <script src="/app/bower_components/angular-loader/angular-loader.js"></script>
+  <script src="/app/bower_components/angular-loader/angular-loader.min.js"></script>
+  <script src="/app/bower_components/angular-mocks/angular-mocks.js"></script>
+  <script src="/app/bower_components/angular-mocks/ngAnimateMock.js"></script>
+  <script src="/app/bower_components/angular-mocks/ngMock.js"></script>
+  <script src="/app/bower_components/angular-mocks/ngMockE2E.js"></script>
+  <script src="/app/bower_components/angular-ui-router/karma.conf.js"></script>
+  <script src="/app/bower_components/angular-ui-router/rollup.config.js"></script>
+  <script src="/app/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="/app/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/app/bower_components/angular-ui-router/release/resolveService.js"></script>
+  <script src="/app/bower_components/angular-ui-router/release/resolveService.min.js"></script>
+  <script src="/app/bower_components/angular-ui-router/release/stateEvents.js"></script>
+  <script src="/app/bower_components/angular-ui-router/release/stateEvents.min.js"></script>
+  <script src="/app/bower_components/angular-ui-router/release/ui-router-angularjs.js"></script>
+  <script src="/app/bower_components/angular-ui-router/release/ui-router-angularjs.min.js"></script>
+  <!-- endinject -->
 </body>
 </html>

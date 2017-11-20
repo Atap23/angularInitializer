@@ -3,14 +3,12 @@
 
 // Declare app level module which depends on views, and components
   angular.module('angularInitializer', [
-    'ngRoute',
-    'angularInitializer.view1',
-    'angularInitializer.view2',
-    'angularInitializer.version'
+    'ui.router',
+    'angularInitializer.intro'
   ]).
-  config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
+  config(['$locationProvider', '$urlRouterProvider', function($locationProvider, $urlRouterProvider) {
     $locationProvider.html5Mode(true);
 
-    $routeProvider.otherwise({redirectTo: '/'});
+    $urlRouterProvider.otherwise('/intro');
   }]);
 })();
